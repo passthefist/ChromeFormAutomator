@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PageScripts</title>
+        <script src="popup.js"></script>
+        <style>
+          body {
+            margin:0px;
+          }
+
+          a {
+            display:block;
+            margin:10px 5px;
+            cursor: pointer;
+          }
+
+          ul {
+            border-top: 1px solid #666;
+            list-style: none;
+            white-space: nowrap;
+            padding:0px;
+            margin:0px;
+          }
+
+          li {
+            padding:5px 10px;
+            cursor: pointer;
+          }
+
+          li:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+          <a data-options>Manage Scripts</a>
+          <ul data-menu>
+          </ul>
+        </div>
+    </body>
+</html>

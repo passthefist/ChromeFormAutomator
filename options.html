@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Form Automator Options</title><script src='options.js'></script>
+  <style>
+    .menu {
+      width: 200px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      border-radius: 3px;
+      border: 1px solid #aaa;
+      box-shadow: 3px 3px 5px 2px #666;
+    }
+
+    ul {
+      border-top: 1px solid #666;
+      list-style: none;
+      white-space: nowrap;
+      padding:0px;
+      margin:0px;
+    }
+
+    li {
+      padding:5px 10px;
+      cursor: pointer;
+    }
+
+    li:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+  </head>
+<body>
+  <div>
+    <input type='text' id='item_name' placeholder='Script/Block name'/>
+    <span id='parent_block_menu'>
+      <label for='parent_block' style="display:none">Inheriting Block</label>
+      <select name='parent_block' id='parent_block'>
+        <option>Base</option>
+        <option>Base</option>
+        <option>Base</option>
+        <option>Base</option>
+      </select>
+    </span>
+  </div>
+  <div class="menu" id="load_modal" style="display:none;">
+    <ul id="load_menu">
+    </ul>
+  </div>
+  <div>
+    <textarea id='script_pad' cols="96" rows="50"></textarea>
+  </div>
+  <div>
+    <input type='button' id='save_script' value='Save Script'/>
+    <input type='button' id='load_script' value='Load Script'/>
+    <input type='button' id='save_block' value='Save Block'/>
+    <input type='button' id='load_block' value='Load Block'/>
+    <input type='button' id='clear_data' value='Clear All Data'/>
+  </div>
+</body>
+</html>
