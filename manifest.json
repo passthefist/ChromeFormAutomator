@@ -5,8 +5,7 @@
   "permissions": [
     "activeTab",
     "file://*",
-    "storage",
-    "tabs"
+    "storage"
   ],
   "background": {
     "scripts": ["popup.js"],
